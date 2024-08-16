@@ -1,0 +1,150 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-image: url('background7.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+}
+
+/* Headline styles */
+h1 {
+    color: #001858; /* Headline */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5em;
+}
+
+/* Subheadline styles (h2) */
+h2 {
+    color: #001858; /* Headline */
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+/* Center container for h2 and ul */
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* List item styles */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    background-color: #f3d2c1; /* Main */
+    max-width: 500px;
+    text-align: center;
+    border: 2px solid #001858; /* Illustration Stroke */
+    border-radius: 5px;
+    padding: 5px 10px; /* Smaller padding for smaller buttons */
+    margin: 5px 0; /* Smaller margin */
+    cursor: pointer;
+    list-style: none;
+    font-size: 30px; 
+}
+
+li.crossed {
+    text-decoration: line-through;
+    background-color: #8bd3dd; /* Secondary */
+}
+
+/* Button styles */
+button {
+    background-color: #f582ae; /* Button */
+    color: #001858; /* Button Text */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; /* Smaller button size */
+    cursor: pointer;
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #f3d2c1; /* Main */
+}
+
+/* Highlight styles */
+.highlight {
+    background-color: #fef6e4; /* Highlight */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Tertiary styles */
+.tertiary {
+    color: #f582ae; /* Tertiary */
+}
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners for the container */
+    margin: 20px auto; /* Center the container and add margin */
+    max-width: 900px; /* Limit the maximum width for better layout */
+}
+#uncheck-all {
+    display: inline-block; /* Ensure the button is treated as an inline-block element */
+    margin-top: 20px; /* Add some spacing above the button */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    background-color: #f582ae; /* Match the button color as specified */
+    color: #001858; /* Match the button text color as specified */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Adjust font size as needed */
+}
+#uncheck-all:hover {
+    background-color: #f3d2c1; /* Change color on hover for better UX */
+}
+
+/* Styling for input fields and buttons */
+.category input[type="text"] {
+    margin-top: 10px;
+    padding: 8px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.category button.add-item {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #f582ae; /* Button color */
+    color: #001858; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category button.add-item:hover {
+    background-color: #f3d2c1; /* Button hover color */
+}
+
+/* Styling for remove buttons */
+.remove-item {
+    background-color: #f582ae; /* Match the button color */
+    color: #001858; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.remove-item:hover {
+    background-color: #f3d2c1; /* Button hover color */
+}
+
+
