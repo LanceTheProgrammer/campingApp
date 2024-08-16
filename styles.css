@@ -1,30 +1,27 @@
 body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    font-family: Arial, sans-serif; /* Set a default font */
-    background-image: url('background7.png'); /* Set the background image */
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent repeating of the background image */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background7.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Headline styles */
 h1 {
-    color: #001858; /* Headline */
+    color: #001858;
     text-align: center;
     padding: 20px 0;
     font-size: 2.5em;
 }
 
-/* Subheadline styles (h2) */
 h2 {
-    color: #001858; /* Headline */
+    color: #001858;
     text-align: center;
     margin: 10px 0;
     font-size: 1.5em;
 }
 
-/* Center container for h2 and ul */
 .category {
     display: flex;
     flex-direction: column;
@@ -32,7 +29,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* List item styles */
 ul {
     padding: 0;
     margin: 0;
@@ -40,74 +36,73 @@ ul {
 }
 
 li {
-    background-color: #f3d2c1; /* Main */
+    background-color: #f3d2c1;
     max-width: 500px;
     text-align: center;
-    border: 2px solid #001858; /* Illustration Stroke */
+    border: 2px solid #001858;
     border-radius: 5px;
-    padding: 5px 10px; /* Smaller padding for smaller buttons */
-    margin: 5px 0; /* Smaller margin */
+    padding: 5px 10px;
+    margin: 5px 0;
     cursor: pointer;
     list-style: none;
-    font-size: 30px; 
+    font-size: 30px;
 }
 
 li.crossed {
     text-decoration: line-through;
-    background-color: #8bd3dd; /* Secondary */
+    background-color: #8bd3dd;
 }
 
-/* Button styles */
 button {
-    background-color: #f582ae; /* Button */
-    color: #001858; /* Button Text */
+    background-color: #f582ae;
+    color: #001858;
     border: none;
     border-radius: 5px;
-    padding: 8px 16px; /* Smaller button size */
+    padding: 8px 16px;
     cursor: pointer;
-    font-size: 0.9em; /* Slightly smaller font size */
+    font-size: 0.9em;
     margin-top: 20px;
 }
 
 button:hover {
-    background-color: #f3d2c1; /* Main */
+    background-color: #f3d2c1;
 }
 
-/* Highlight styles */
 .highlight {
-    background-color: #fef6e4; /* Highlight */
+    background-color: #fef6e4;
     padding: 5px;
     border-radius: 5px;
 }
 
-/* Tertiary styles */
 .tertiary {
-    color: #f582ae; /* Tertiary */
-}
-.container {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
-    padding: 20px; /* Add some padding */
-    border-radius: 8px; /* Optional: rounded corners for the container */
-    margin: 20px auto; /* Center the container and add margin */
-    max-width: 900px; /* Limit the maximum width for better layout */
-}
-#uncheck-all {
-    display: inline-block; /* Ensure the button is treated as an inline-block element */
-    margin-top: 20px; /* Add some spacing above the button */
-    padding: 10px 20px; /* Add some padding for better appearance */
-    background-color: #f582ae; /* Match the button color as specified */
-    color: #001858; /* Match the button text color as specified */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Optional: rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 16px; /* Adjust font size as needed */
-}
-#uncheck-all:hover {
-    background-color: #f3d2c1; /* Change color on hover for better UX */
+    color: #f582ae;
 }
 
-/* Styling for input fields and buttons */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#uncheck-all {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f582ae;
+    color: #001858;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#uncheck-all:hover {
+    background-color: #f3d2c1;
+}
+
 .category input[type="text"] {
     margin-top: 10px;
     padding: 8px;
@@ -120,21 +115,20 @@ button:hover {
 .category button.add-item {
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #f582ae; /* Button color */
-    color: #001858; /* Button text color */
+    background-color: #f582ae;
+    color: #001858;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .category button.add-item:hover {
-    background-color: #f3d2c1; /* Button hover color */
+    background-color: #f3d2c1;
 }
 
-/* Styling for remove buttons */
 .remove-item {
-    background-color: #f582ae; /* Match the button color */
-    color: #001858; /* Button text color */
+    background-color: #f582ae;
+    color: #001858;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -144,7 +138,105 @@ button:hover {
 }
 
 .remove-item:hover {
-    background-color: #f3d2c1; /* Button hover color */
+    background-color: #f3d2c1;
 }
 
+/* Media Queries for smaller screens */
+@media (max-width: 1200px) {
+    /* Adjustments for screens smaller than 1200px */
+    h1 {
+        font-size: 2em;
+    }
 
+    h2 {
+        font-size: 1.25em;
+    }
+
+    li {
+        font-size: 24px;
+        max-width: 90%;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    #uncheck-all {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .category input[type="text"] {
+        width: 90%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for screens smaller than 768px */
+    h1 {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    button {
+        font-size: 0.7em;
+        padding: 5px 10px;
+    }
+
+    #uncheck-all {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .category input[type="text"] {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for screens smaller than 480px */
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 0.875em;
+    }
+
+    li {
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+
+    button {
+        font-size: 0.6em;
+        padding: 4px 8px;
+    }
+
+    #uncheck-all {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 5px;
+    }
+}
